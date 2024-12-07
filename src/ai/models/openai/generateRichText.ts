@@ -1,7 +1,7 @@
-import { openai } from '@ai-sdk/openai'
 import { jsonSchema, streamObject } from 'ai'
 
 import { exampleOutput } from '../example.js'
+import { openai } from './openaiInstance.js'
 
 export const generateRichText = async (text: string, options: any) => {
   const streamResult = await streamObject({
